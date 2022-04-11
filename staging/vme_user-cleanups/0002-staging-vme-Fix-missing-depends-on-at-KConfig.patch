@@ -1,0 +1,55 @@
+From aab0591ac73a54059621c722a63635d43a446fd2 Mon Sep 17 00:00:00 2001
+Message-Id: <aab0591ac73a54059621c722a63635d43a446fd2.1649721450.git.codeagain@codeagain.dev>
+In-Reply-To: <cover.1649721450.git.codeagain@codeagain.dev>
+References: <cover.1649721450.git.codeagain@codeagain.dev>
+From: Bruno Moreira-Guedes <codeagain@codeagain.dev>
+Date: Tue, 5 Apr 2022 23:49:15 -0300
+Subject: [PATCH v2 2/3] staging: vme: Fix missing `depends on` at KConfig
+
+Originally, the KConfig file for VME_USER
+("drivers/staging/vme/devices/Kconfig") was sourced at
+"drivers/vme/boards/KConfig". It misses a `depends on` line for VME_BUS,
+which went unnoticeable for a menuconfig user who wouldn't be able to
+select it through this interface without selecting the CONFIG_VME_BUS
+option because it was nested on its menu.
+
+A patch to move appropriately this driver to the "Staging" submenu[1],
+however, unveiled this missing `depends on` line, since it moved the
+`source` line for VME_USER's KConfig to somewhere else, allowing it to
+be compiled without the support for VME_BRIDGE. While it compiles fine
+and seems to initialize the driver fine[2], it seems to make no sense
+having VME_USER without VME_BUS.
+
+This patches addresses it by adding the VME_BUS to the `depends on` line
+at "drivers/staging/vme/devices/Kconfig".
+
+CHANGELOG:
+v2:
+- Added this patch to the patchset
+
+REFERENCES AND NOTES
+[1] First commit in this patch, originally submitted at
+https://lore.kernel.org/linux-staging/3fbc5325e94b9ae0666a1f5a56a4e5372bfcea1d.camel@codeagain.dev/T/#t
+[2] Tested both as module and as built-in.
+
+Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
+---
+ drivers/staging/vme/devices/Kconfig | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/drivers/staging/vme/devices/Kconfig b/drivers/staging/vme/devices/Kconfig
+index 5651bb16b28b..e8b4461bf27f 100644
+--- a/drivers/staging/vme/devices/Kconfig
++++ b/drivers/staging/vme/devices/Kconfig
+@@ -3,7 +3,7 @@ comment "VME Device Drivers"
+ 
+ config VME_USER
+ 	tristate "VME user space access driver"
+-	depends on STAGING
++	depends on STAGING && VME_BUS
+ 	help
+ 	  If you say Y here you want to be able to access a limited number of
+ 	  VME windows in a manner at least semi-compatible with the interface
+-- 
+2.35.1
+
