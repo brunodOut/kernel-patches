@@ -4,7 +4,7 @@ In-Reply-To: <cover.1649721450.git.codeagain@codeagain.dev>
 References: <cover.1649721450.git.codeagain@codeagain.dev>
 From: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 Date: Sun, 3 Apr 2022 22:05:31 -0300
-Subject: [PATCH v2 1/3] staging: vme: Move vme_user to staging KConfig
+Subject: [PATCH v3 1/3] staging: vme: Move vme_user to staging KConfig
 
 Currently, the VME_USER driver is in the staging tree Kconfig, unlike
 other VME drivers already moved to the main portions of the kernel tree.
