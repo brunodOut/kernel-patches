@@ -32,10 +32,6 @@ the contents of 'vme/devices' into the 'vme/' dir, and renames it to
 of this driver's contents. Furthermore, it updates the MAINTAINERS file
 to properly reflect the new paths.
 
-CHANGELOG
-v2:
-- Added this patch to the patchset
-
 Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 ---
  MAINTAINERS                                          | 2 +-

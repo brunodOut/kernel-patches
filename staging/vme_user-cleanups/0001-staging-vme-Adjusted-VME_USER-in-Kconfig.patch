@@ -28,17 +28,6 @@ This change goes into the same direction of commit
 <4b4cdf3979c32fa3d042d150f49449c74d048553> ("STAGING: Move staging
 drivers back to staging-specific menu")
 
-CHANGELOG
-v1:
- - Sourced "drivers/staging/vme/devices/Kconfig" in
-   "drivers/staging/Kconfig" and unsourced in "drivers/vme/Kconfig".
-
-v2:
-- Turned into a patchset to (1) fix missing "depends on" missing entry
-  in config VME_USER at "drivers/staging/vme/devices/Kconfig",
-  affecting the behavior of this patch, and (2) fix unnecessary
-  remaining files from the time the whole vme subtree was in staging.
-
 Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 ---
  drivers/staging/Kconfig | 2 ++

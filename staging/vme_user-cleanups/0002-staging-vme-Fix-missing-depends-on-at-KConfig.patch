@@ -24,10 +24,6 @@ in), it seems to make no sense having VME_USER without VME_BUS.
 This patches addresses it by adding the VME_BUS to the `depends on` line
 at "drivers/staging/vme/devices/Kconfig".
 
-CHANGELOG:
-v2:
-- Added this patch to the patchset
-
 Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 ---
  drivers/staging/vme/devices/Kconfig | 2 +-

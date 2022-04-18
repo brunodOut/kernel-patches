@@ -9,6 +9,51 @@ menuconfig (1/3), fixes a missing `depends on` line in a Kconfig file
 (2/3), and rearrages the directory tree for the driver allowing a more
 straightforward comprehension of its contents (3/3).
 
+
+
+CHANGE SUMMARY
+
+  Version:  v1  v2  v3
+[PATCH 1/3] *   -   *
+[PATCH 2/3] -   *   *
+[PATCH 3/3] -   *   *
+
+CHANGELOG
+[PATCH 0/3] staging: vme: Restructuring menuconfig and tree
+v1:
+  Created PATCH 1/3 as a single patch
+v2:
+  Added PATCH 2/3 and 3/3, turning it into a patchset
+v3:
+  Fixed and improved commit messages according to previous comments by
+  Greg and Alison (to whom I'm indebted for their kind reviews). The
+  commit titles got changed to be more specific and use the present
+  imperative tense as for Alison's suggestions. The message body got
+  fixed according to Greg formatting comments. The changelogs were moved
+  to the cover letter as per another suggestion by Alison, and I added
+  missing details (like the update in the MAINTAINERS I failed to
+  mention in v2) and made textual improvements for clarity that I also
+  noticed.
+
+[PATCH 1/3] staging: vme: Move vme_user to staging KConfig
+v1:
+ - Sourced "drivers/staging/vme/devices/Kconfig" in
+   "drivers/staging/Kconfig" and unsourced in "drivers/vme/Kconfig".
+v3:
+ - Modified the commit subject and text body.
+
+[PATCH 2/3] staging: vme: Add VME_BUS dependency to Kconfig
+v2:
+ - Added this patch to the patchset.
+v3:
+ - Modified the commit subject and text body.
+
+[PATCH 3/3] staging: vme: Move 'vme/devices' to 'vme_user/'
+v2:
+ - Added this patch to the patchset
+v3
+ - Modified the commit subject and text body.
+
 Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 
 Bruno Moreira-Guedes (3):
