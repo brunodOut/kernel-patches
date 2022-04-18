@@ -11,20 +11,22 @@ other VME drivers already moved to the main portions of the kernel tree.
 Its configuration is, however, nested into the VME_BUS config option,
 which might be misleading.
 
-Since the staging tree "[...] is used to hold stand-alone[1] drivers and
+Since the staging tree "[...] is used to hold stand-alone drivers and
 filesystem that are not ready to be merged into the main portion of the
-Linux kernel tree [...]"[1], IMHO all staging drivers should appear
-nested into the Main Menu -> Device Drivers -> Staging Drivers to make
-sure the user don't pick it without being fully aware of its staging
-status as it could be the case in Menu -> Device Drivers -> VME bridge
-support (the current location).
+Linux kernel tree [...]"(from 
+https://lore.kernel.org/all/20090320172502.GA14647@kroah.com/T/),
+staging drivers should appear nested into the Main Menu -> Device
+Drivers -> Staging Drivers to make sure the user don't pick it without
+being fully aware of its staging status as it could be the case in
+Menu -> Device Drivers -> VME bridge support (the current location).
 
 With this change menuconfig users will clearly know this is not a driver
 in the main portion of the kernel tree and decide whether to build it or
 not with that clearly in mind.
 
-This change goes into the same direction of commit 4b4cdf3979c3
-("STAGING: Move staging drivers back to staging-specific menu")
+This change goes into the same direction of commit
+<4b4cdf3979c32fa3d042d150f49449c74d048553> ("STAGING: Move staging
+drivers back to staging-specific menu")
 
 CHANGELOG
 v1:
