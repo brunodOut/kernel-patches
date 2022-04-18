@@ -65,7 +65,7 @@ Bruno Moreira-Guedes (3):
   staging: vme: "drivers/staging/vme" tree cleanup
 
  MAINTAINERS                                          | 2 +-
- drivers/staging/Kconfig                              | 2 ++
+ drivers/staging/Kconfig                              | 1 +
  drivers/staging/Makefile                             | 2 +-
  drivers/staging/vme/Makefile                         | 2 --
  drivers/staging/{vme/devices => vme_user}/Kconfig    | 2 +-
@@ -73,7 +73,7 @@ Bruno Moreira-Guedes (3):
  drivers/staging/{vme/devices => vme_user}/vme_user.c | 0
  drivers/staging/{vme/devices => vme_user}/vme_user.h | 0
  drivers/vme/Kconfig                                  | 2 --
- 9 files changed, 5 insertions(+), 7 deletions(-)
+ 9 files changed, 4 insertions(+), 7 deletions(-)
  delete mode 100644 drivers/staging/vme/Makefile
  rename drivers/staging/{vme/devices => vme_user}/Kconfig (93%)
  rename drivers/staging/{vme/devices => vme_user}/Makefile (100%)
@@ -81,5 +81,5 @@ Bruno Moreira-Guedes (3):
  rename drivers/staging/{vme/devices => vme_user}/vme_user.h (100%)
 
 -- 
-2.35.1
+2.35.3
 
