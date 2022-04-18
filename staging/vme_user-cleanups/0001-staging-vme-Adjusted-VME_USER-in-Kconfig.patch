@@ -35,12 +35,12 @@ Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
  2 files changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/drivers/staging/Kconfig b/drivers/staging/Kconfig
-index 932acb4e8cbc..0545850eb2ff 100644
+index fc274737053d..e4dcf411030d 100644
 --- a/drivers/staging/Kconfig
 +++ b/drivers/staging/Kconfig
-@@ -88,4 +88,6 @@ source "drivers/staging/qlge/Kconfig"
+@@ -87,4 +87,6 @@ source "drivers/staging/fieldbus/Kconfig"
+ source "drivers/staging/qlge/Kconfig"
  
- source "drivers/staging/wfx/Kconfig"
  
 +source "drivers/staging/vme/devices/Kconfig"
 +
@@ -57,5 +57,4 @@ index 936392ca3c8c..c13dd9d2a604 100644
 -
  endif # VME
 -- 
-2.35.1
-
+2.35.3

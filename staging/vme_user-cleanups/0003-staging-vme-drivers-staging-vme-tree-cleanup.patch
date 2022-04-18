@@ -35,14 +35,14 @@ to properly reflect the new paths.
 Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 ---
  MAINTAINERS                                          | 2 +-
- drivers/staging/Kconfig                              | 2 +-
+ drivers/staging/Kconfig                              | 3 +--
  drivers/staging/Makefile                             | 2 +-
  drivers/staging/vme/Makefile                         | 2 --
  drivers/staging/{vme/devices => vme_user}/Kconfig    | 0
  drivers/staging/{vme/devices => vme_user}/Makefile   | 0
  drivers/staging/{vme/devices => vme_user}/vme_user.c | 0
  drivers/staging/{vme/devices => vme_user}/vme_user.h | 0
- 8 files changed, 3 insertions(+), 5 deletions(-)
+ 8 files changed, 3 insertions(+), 6 deletions(-)
  delete mode 100644 drivers/staging/vme/Makefile
  rename drivers/staging/{vme/devices => vme_user}/Kconfig (100%)
  rename drivers/staging/{vme/devices => vme_user}/Makefile (100%)
@@ -50,10 +50,10 @@ Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
  rename drivers/staging/{vme/devices => vme_user}/vme_user.h (100%)
 
 diff --git a/MAINTAINERS b/MAINTAINERS
-index fd768d43e048..88423218e5e6 100644
+index 3ed62dcd144e..efc38961f792 100644
 --- a/MAINTAINERS
 +++ b/MAINTAINERS
-@@ -21014,7 +21014,7 @@ L:	linux-kernel@vger.kernel.org
+@@ -21010,7 +21010,7 @@ L:	linux-kernel@vger.kernel.org
  S:	Maintained
  T:	git git://git.kernel.org/pub/scm/linux/kernel/git/gregkh/char-misc.git
  F:	Documentation/driver-api/vme.rst
@@ -63,19 +63,20 @@ index fd768d43e048..88423218e5e6 100644
  F:	include/linux/vme*
  
 diff --git a/drivers/staging/Kconfig b/drivers/staging/Kconfig
-index 0545850eb2ff..9f11592336f8 100644
+index e4dcf411030d..e117811ec832 100644
 --- a/drivers/staging/Kconfig
 +++ b/drivers/staging/Kconfig
-@@ -88,6 +88,6 @@ source "drivers/staging/qlge/Kconfig"
+@@ -86,7 +86,6 @@ source "drivers/staging/fieldbus/Kconfig"
  
- source "drivers/staging/wfx/Kconfig"
+ source "drivers/staging/qlge/Kconfig"
  
+-
 -source "drivers/staging/vme/devices/Kconfig"
 +source "drivers/staging/vme_user/Kconfig"
  
  endif # STAGING
 diff --git a/drivers/staging/Makefile b/drivers/staging/Makefile
-index 3ffb35ccfae2..1dffa02121ee 100644
+index 65e317922e3f..db7287de0faf 100644
 --- a/drivers/staging/Makefile
 +++ b/drivers/staging/Makefile
 @@ -14,7 +14,7 @@ obj-$(CONFIG_OCTEON_ETHERNET)	+= octeon/
@@ -112,5 +113,5 @@ similarity index 100%
 rename from drivers/staging/vme/devices/vme_user.h
 rename to drivers/staging/vme_user/vme_user.h
 -- 
-2.35.1
+2.35.3
 
