@@ -9,6 +9,10 @@ menuconfig (1/3), fixes a missing `depends on` line in a Kconfig file
 (2/3), and rearrages the directory tree for the driver allowing a more
 straightforward comprehension of its contents (3/3).
 
+The 'vme_user/' driver is the only remaining vme-family driver in the
+'staging/' tree, but its structure, entry in menuconfig and building
+routines are still attached to the 'vme/' subtree now outside
+'staging/'. The present patchset fixes it.
 
 
 CHANGE SUMMARY
