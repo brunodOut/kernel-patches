@@ -1,7 +1,7 @@
-From aab0591ac73a54059621c722a63635d43a446fd2 Mon Sep 17 00:00:00 2001
-Message-Id: <aab0591ac73a54059621c722a63635d43a446fd2.1649721450.git.codeagain@codeagain.dev>
-In-Reply-To: <cover.1649721450.git.codeagain@codeagain.dev>
-References: <cover.1649721450.git.codeagain@codeagain.dev>
+From 00de5644d7c2f8c8878eccf86b761e0602732080 Mon Sep 17 00:00:00 2001
+Message-Id: <00de5644d7c2f8c8878eccf86b761e0602732080.1650321310.git.codeagain@codeagain.dev>
+In-Reply-To: <cover.1650321310.git.codeagain@codeagain.dev>
+References: <cover.1650321310.git.codeagain@codeagain.dev>
 From: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 Date: Tue, 5 Apr 2022 23:49:15 -0300
 Subject: [PATCH v2 2/3] staging: vme: Add VME_BUS dependency to Kconfig

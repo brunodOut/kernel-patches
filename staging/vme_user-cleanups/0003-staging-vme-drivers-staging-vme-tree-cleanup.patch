@@ -1,7 +1,7 @@
-From 142698e3761c1e7ba8b17cdd9dc077472ef81668 Mon Sep 17 00:00:00 2001
-Message-Id: <142698e3761c1e7ba8b17cdd9dc077472ef81668.1649721450.git.codeagain@codeagain.dev>
-In-Reply-To: <cover.1649721450.git.codeagain@codeagain.dev>
-References: <cover.1649721450.git.codeagain@codeagain.dev>
+From 2cd7de9a426c443a5ea618682d605ecfd751d798 Mon Sep 17 00:00:00 2001
+Message-Id: <2cd7de9a426c443a5ea618682d605ecfd751d798.1650321310.git.codeagain@codeagain.dev>
+In-Reply-To: <cover.1650321310.git.codeagain@codeagain.dev>
+References: <cover.1650321310.git.codeagain@codeagain.dev>
 From: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 Date: Mon, 11 Apr 2022 20:02:02 -0300
 Subject: [PATCH v3 3/3] staging: vme: Move 'vme/devices' to 'vme_user/'
