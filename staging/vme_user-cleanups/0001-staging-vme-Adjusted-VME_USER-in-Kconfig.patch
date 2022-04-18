@@ -39,9 +39,6 @@ v2:
   affecting the behavior of this patch, and (2) fix unnecessary
   remaining files from the time the whole vme subtree was in staging.
 
-REFERENCES
-[1] https://lkml.org/lkml/2009/3/18/314
-
 Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 ---
  drivers/staging/Kconfig | 2 ++
