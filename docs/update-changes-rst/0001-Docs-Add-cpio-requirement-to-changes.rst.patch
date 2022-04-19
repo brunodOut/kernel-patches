@@ -1,0 +1,44 @@
+From 16abd8eb6a5c8398a030ae5d8919d5c8e92e2af1 Mon Sep 17 00:00:00 2001
+Message-Id: <16abd8eb6a5c8398a030ae5d8919d5c8e92e2af1.1650336366.git.codeagain@codeagain.dev>
+In-Reply-To: <cover.1650336366.git.codeagain@codeagain.dev>
+References: <cover.1650336366.git.codeagain@codeagain.dev>
+From: Bruno Moreira-Guedes <codeagain@codeagain.dev>
+Date: Mon, 18 Apr 2022 23:01:06 -0300
+Subject: [PATCH 1/2] Docs: Add cpio requirement to changes.rst
+
+The install target requires cpio to run the `kernel/gen_kheaders.sh`
+script, but it's missing in the requirements list at
+'Documentation/process/changes.rst'. This patch adds it to the list.
+
+Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
+---
+ Documentation/process/changes.rst | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/Documentation/process/changes.rst b/Documentation/process/changes.rst
+index a337e8eabfe1..41a44e5f47e6 100644
+--- a/Documentation/process/changes.rst
++++ b/Documentation/process/changes.rst
+@@ -56,6 +56,7 @@ iptables               1.4.2            iptables -V
+ openssl & libcrypto    1.0.0            openssl version
+ bc                     1.06.95          bc --version
+ Sphinx\ [#f1]_         1.7              sphinx-build --version
++cpio                   any              cpio --version
+ ====================== ===============  ========================================
+ 
+ .. [#f1] Sphinx is needed only to build the Kernel documentation
+@@ -458,6 +459,11 @@ mcelog
+ 
+ - <http://www.mcelog.org/>
+ 
++cpio
++----
++
++- <https://www.gnu.org/software/cpio/>
++
+ Networking
+ **********
+ 
+-- 
+2.35.3
+
