@@ -2,7 +2,7 @@ From 664bdcbb2b33b866de200ac9c05fa020ecb27ffd Mon Sep 17 00:00:00 2001
 Message-Id: <cover.1650376049.git.codeagain@codeagain.dev>
 From: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 Date: Mon, 18 Apr 2022 23:46:06 -0300
-Subject: [PATCH 0/2] Docs: Update information at changes.rst
+Subject: [PATCH v2 0/2] Docs: Update information at changes.rst
 
 Add and update information at 'Documentation/process/changes.rst'. The
 text has outdated kernel version and misses the 'cpio' build
