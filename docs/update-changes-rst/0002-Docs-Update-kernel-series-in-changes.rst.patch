@@ -4,12 +4,13 @@ In-Reply-To: <cover.1650336366.git.codeagain@codeagain.dev>
 References: <cover.1650336366.git.codeagain@codeagain.dev>
 From: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 Date: Mon, 18 Apr 2022 23:05:13 -0300
-Subject: [PATCH 2/2] Docs: Update kernel series in changes.rst
+Subject: [PATCH v2 2/2] Docs: Replace version by 'current' in changes.rst
 
 The file 'Documentation/process/changes.rst' states the listed
 requirements are for the 4.x kernel version. However, there are
-requirements updated for the 5.x version, so this patch updates it to
-match the current kernel version.
+requirements updated for the 5.x version, as there might be in other
+future versions. This patch updates it to 'latest' so the document won't
+be outdated in the future.
 
 Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 ---
@@ -17,7 +18,7 @@ Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/Documentation/process/changes.rst b/Documentation/process/changes.rst
-index 41a44e5f47e6..08515b11cf92 100644
+index 41a44e5f47e6..34415ae1af1b 100644
 --- a/Documentation/process/changes.rst
 +++ b/Documentation/process/changes.rst
 @@ -7,7 +7,7 @@ Intro
@@ -25,7 +26,7 @@ index 41a44e5f47e6..08515b11cf92 100644
  
  This document is designed to provide a list of the minimum levels of
 -software necessary to run the 4.x kernels.
-+software necessary to run the 5.x kernels.
++software necessary to run the current kernel version.
  
  This document is originally based on my "Changes" file for 2.0.x kernels
  and therefore owes credit to the same people as that file (Jared Mauch,
