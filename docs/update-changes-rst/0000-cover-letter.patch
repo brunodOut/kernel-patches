@@ -10,17 +10,33 @@ requirement, necessary for the `kernel/gen_kheaders.sh` script called by
 the install target.
 
 The PATCH 1/2 fixes the missing cpio requirement, while PATCH 2/2 fixes
-the kernel version.
+the kernel version reference.
 
 Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 ---
+CHANGE SUMMARY
+   version: v1  v2
+[PATCH 1/2] *   -
+[PATCH 1/2] *   *
+
+CHANGELOG
+[PATCH 1/2] Docs: Add cpio requirement to changes.rst
+        v2:
+                - No changes
+[PATCH 2/2] Docs: Replace version by 'current' in changes.rst
+        v2:
+                - Renamed from 'Docs: Update kernel series in
+                changes.rst'
+                - Changed approach from the original, replacing 4.x by
+                5.x, to using 'current', as suggested by Matthew Wilcox.
+---
 Bruno Moreira-Guedes (2):
   Docs: Add cpio requirement to changes.rst
-  Docs: Update kernel series in changes.rst
+  Docs: Replace version by 'current' in changes.rst
 
  Documentation/process/changes.rst | 8 +++++++-
  1 file changed, 7 insertions(+), 1 deletion(-)
 
--- 
+--
 2.35.3
 
