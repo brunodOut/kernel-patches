@@ -1,7 +1,7 @@
-From a124c3c34e627c124673640aed177c10e401b052 Mon Sep 17 00:00:00 2001
-Message-Id: <a124c3c34e627c124673640aed177c10e401b052.1650336366.git.codeagain@codeagain.dev>
-In-Reply-To: <cover.1650336366.git.codeagain@codeagain.dev>
-References: <cover.1650336366.git.codeagain@codeagain.dev>
+From 664bdcbb2b33b866de200ac9c05fa020ecb27ffd Mon Sep 17 00:00:00 2001
+Message-Id: <664bdcbb2b33b866de200ac9c05fa020ecb27ffd.1650376049.git.codeagain@codeagain.dev>
+In-Reply-To: <cover.1650376049.git.codeagain@codeagain.dev>
+References: <cover.1650376049.git.codeagain@codeagain.dev>
 From: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 Date: Mon, 18 Apr 2022 23:05:13 -0300
 Subject: [PATCH v2 2/2] Docs: Replace version by 'current' in changes.rst
