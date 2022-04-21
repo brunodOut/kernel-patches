@@ -38,7 +38,15 @@ v2:
   * Add new patch to set: 2/3
   * Add new patch to set: 3/3
 
+OBSERVATIONS
+As Martyn confirmed the devices are still being manufactured I'll keep
+going on with this patch meanwhile.
 
+PATCHES
+[PATCH 1/3] staging: vme: Move vme_user to staging KConfig
+[PATCH 2/3] staging: vme: Add VME_BUS dependency to Kconfig
+[PATCH 3/3] staging: vme: Move 'vme/devices/' to 'vme_user/'
+---
 Bruno Moreira-Guedes (3):
   staging: vme: Adjusted VME_USER in Kconfig
   staging: vme: Fix missing `depends on` at KConfig
