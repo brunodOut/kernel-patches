@@ -48,9 +48,9 @@ PATCHES
 [PATCH 3/3] staging: vme: Move 'vme/devices/' to 'vme_user/'
 ---
 Bruno Moreira-Guedes (3):
-  staging: vme: Adjusted VME_USER in Kconfig
-  staging: vme: Fix missing `depends on` at KConfig
-  staging: vme: "drivers/staging/vme" tree cleanup
+  staging: vme: Move vme_user to staging KConfig
+  staging: vme: Add VME_BUS dependency to Kconfig
+  staging: vme: Move 'vme/devices/' to 'vme_user/'
 
  MAINTAINERS                                          | 2 +-
  drivers/staging/Kconfig                              | 1 +
