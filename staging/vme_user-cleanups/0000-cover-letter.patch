@@ -18,10 +18,10 @@ Signed-off-by: Bruno Moreira-Guedes <codeagain@codeagain.dev>
 ---
 CHANGE SUMMARY
 
-  Version:  v1  v2  v3
-[PATCH 1/3] *   -   *
-[PATCH 2/3] -   *   *
-[PATCH 3/3] -   *   *
+  Version:  v1  v2  v3  v4
+[PATCH 1/3] *   -   *   -
+[PATCH 2/3] -   *   *   -
+[PATCH 3/3] -   *   *   *
 
 CHANGELOG
 [PATCH 0/3] staging: vme: Restructuring menuconfig and tree
