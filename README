@@ -3,3 +3,17 @@ KERNEL PATCHES
 My personal linux kernel patches for outreachy tasks, just to keep track
 and maybe be helpful for future applicants. Maybe I'll keep it going and
 reorganize it to keep all my future patches. 
+
+This repository is composed by patches (diff files with commit messages as
+outputed by 'git format-patch' utility), and the work here are my own with
+the exception of where it's stated otherwise. Check the 'LICENSE' file for
+more defails on licensing.
+
+I decided to share publicly this repository so other people starting to
+write kernel patches could have some examples available.
+
+TODO:
+- Write documents explaining the patches (their context, reason, how did I
+  find the need for them, among other things that might be useful for
+  others).
+
